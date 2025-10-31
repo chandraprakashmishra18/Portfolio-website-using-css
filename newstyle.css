@@ -1,83 +1,55 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+*{text-align: center;}
+header{
+    text-align:center;
+    background-color: rgb(38, 38, 184);
     padding: 20px;
-    background-color: #f5f5f5;
-    color: #333;
-    text-align: center;
+    color: aliceblue;
+    margin-bottom:  20px;
+    
 }
-main > section, .main-header, .main-footer, .contact-form, .education-table {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-h1, h2, h3 {
-    color: #0c0c0c;
-}
-.main-header {
-    background-color: #004d99;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-}
-.main-header h1 {
-    color: white;
-    margin: 0;
-}
-.nav-link {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.nav-link a {
-    text-decoration: none;
-    color: #004d99;
-    font-size: 1.1em;
-    font-style: italic;
-}
-.nav-link a:hover {
-    text-decoration: underline;
-}
-.profile-photo {
-        width: 200px;
-    height: 250px;
-    border-radius: 50%;
-    background-color: azure; 
-    display: block; 
-    margin: 0 auto 15px auto;
-    object-fit: cover;
-    border: 3px solid #004d99;
-}
-.tagline {
-    text-align: center;
-    font-style: italic;
-    color: #555;
-    margin-top: -10px;
-}
-.education-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    background-color: azure;
-}
+#headerid{font-size: 50px;
 
-.education-table th, .education-table td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
 }
+.header-content{color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    margin:10px;
 
-.education-table th {
-    background-color: #e0e0e0;
+}
+h1{
+    font-size: 30px;
     font-weight: bold;
-    color: #333;
+    text-align: center;
+    
 }
-#skills ul, #projects ul {
-    list-style-type: square;
-    padding-left: 25px;
+#profile-photo {
+    border-radius:50%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+}
+#tagline {
+    font-size:medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+table th, #table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+table thead tr {
+    background-color: grey;
+    color: #fff;
 }
 #contact h3 {
     background-color: #ffe4c4;
@@ -93,12 +65,12 @@ h1, h2, h3 {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
+    width: 40%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+  
 }
 .submit-btn {
     background-color: #0066cc;
@@ -110,10 +82,25 @@ h1, h2, h3 {
     font-size: large;
     text-align: center;
 }
-.submit-btn:hover {
-    background-color: #004d99;
+
+#button2 {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+    text-align: right;
+    position:fixed;
+    right: 40px;
+    bottom:auto;
+    position: absolute;
+    z-index: 100;
 }
+
 .main-footer {
+    box-sizing: content-box;
     background-color: rgb(245, 212, 164);
     text-align: center;
     font-size: 0.9em;
