@@ -4,110 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stylenew.css">
 </head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Chandra Prakash Mishra - Portfolio</title>
-    <link rel="stylesheet" href="newstyle.css">
-</head>
-<body>
-
-    <header class="main-header">
-        <h1>CHANDRA PRAKASH MISHRA</h1>
+<body id="bodytop">
+    <header>
+        <div id="headerid">My Portfolio</div>
+        <nav>
+        <a href="#About Me" input type="About" value="About" class="header-content">About</a>
+        <a href="#My Skills" input type="My Skill" value="My Skills" class="header-content">Skills</a>
+        <a href="#My Projects" input type="My Project" value="My Project"  class="header-content">Project</a>
+        <a href="# Contact Me" input type="Contact Me" value="Contact Me"  class="header-content">Contact</a>
+        </nav>
     </header>
-    
-    <hr>
-    
-    <div class="welcome-section">
-        <h2>Welcome to my Portfolio:</h2>
-    </div>
-    
-    <div class="nav-link">
-        <a href="about me.html"><i>About</i></a>
-    </div>
-
     <main>
-        <img src="cp photo.jpg" alt="Chandra Prakash Mishra" class="profile-photo">
-        <p class="tagline">Web Developer and Btech CSE student at KR Mangalam University</p>
-        
+        <h1 id="About Me"><u>About Me</u></h1>
+        <img src="cp photo.jpg" alt="Chandra Prakash Mishra" id="profile-photo">
+        <p id="tagline">Hey ! I'm a Web Developer and Btech CSE student at KR Mangalam University</p>
+        <br>
         <hr>
-        
-        <section id="about-me">
-            <header>
-                <h2><u>ABOUT ME</u></h2>
-                <h3><u>Educational Qualifications</u></h3>
-            </header>
-            
-            <table class="education-table">
+        <h2 id="My Skills"><b><u>My Skills</b><u></u></h2>
+        <table>
+            <thead>
                 <tr>
-                    <th>Examination</th>
-                    <th>Board/University</th>
-                    <th>Year of Passing</th>
-                    <th>Percentage/CGPA</th>
+                    <th><b>Python</b></th>
+                    <th><b>HTML</b></th>
+                    <th><b>CSS</b></th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
-                    <td>Class 10<sup>th</sup></td>
-                    <td>CBSE</td>
-                    <td>2022</td>
-                    <td>87 Percentage</td>
+                    <td>Beginner</td>
+                    <td>Beginner</td>
+                    <td>Beginner</td>
                 </tr>
-                <tr> 
-                    <td>Class 12<sup>th</sup></td>
-                    <td>CBSE</td>
-                    <td>2024</td>
-                    <td>86 Percentage</td> 
-                </tr>
-                <tr>
-                    <td>JEE</td>
-                    <td>NTA</td>
-                    <td>2024</td>
-                    <td>86 percentile</td>
-                </tr>
+                </tbody>
             </table>
-        </section>
-
-        <section id="skills">
-            <h3><u>Skills</u></h3>
-            <ul>
-                <li>HTML</li>
-                <li>Video Editing</li>
-                <li>Public speaking</li>
-                <li>Python</li>
-                <li>Leadership skills (head boy in both 10<sup>th</sup> and 12<sup>th</sup> Class)</li>
-                <li>Communication skills</li>
-                <li>Teamwork</li>
-                <li>Time management</li>
-            </ul>
-        </section>
-        
-        <hr>
-        
-        <section id="projects">
-            <h3><u>My Projects</u></h3>
-            <ul> 
-                <li>Portfolio Website</li>
-                <li>Calculator</li>
-                <li>Pyramid</li>
-                <li>Student result management system</li>
-                <li>Calorie-tracker project</li>
-                <li>Personal expense manager</li>
-                <li>Personal portfolio website</li>
-            </ul>
-        </section>
-        
-        <hr>
-        
-        <section id="contact">
-            <h3><u>Contact Me</u></h3>
+            <br>
+            <hr>
+        <h3 id="My Projects">My Projects</h3>
+        <div><br>
+            <br>
+        <img src="images (1).jpg" alt="My Portfolio project"><br>
+        <br>
+        My Portfolio project
+        <br>
+        <br>
+        </div><div><img src="images (2).jpg" alt="Calculator project"></div>
+        <br>
+        Calculator project
+        <br>
+        <br>
+        <div><img src="images.jpg" alt="Calorie tracker project">
+            <br>
+            <br>
+            Calorie tracker project
+            </div>
+            <br>
+            <hr>
+         <section id="contact">
+            <h3 id=" Contact Me"><u> Contact Me</u></h3>
             <form action="/submit_form" method="post" class="contact-form">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br>
                 
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"required><br>
+                <input type="email" id="email" name="email" required><br>
                 
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" required></textarea><br>
@@ -115,17 +76,24 @@
                 <input type="submit" value="Submit" class="submit-btn">
             </form>
         </section>
+            <br>
+            <hr>
+            <br>
 
-    </main> 
+             <a href="#bodytop" input type="back at top" value="Back at Top" class="nav-btn" id="button2">Back to Top</a>
+    <br>
+ <br>
+</main>
+
+
+              
     
     <hr>
-    
+     <br>
     <footer class="main-footer">
         <p>&copy; 2025 Chandra Prakash Mishra. All rights reserved.</p>
+         <br>
     </footer>
 
 </body>
-</html>
-</body>
-
 </html>
